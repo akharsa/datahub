@@ -341,5 +341,14 @@
         "description": "Import ML Models and lineage from Google Vertex AI.",
         "docsUrl": "https://datahubproject.io/docs/generated/ingestion/sources/vertexai/",
         "recipe": "source:\n  type: vertexai\n  config:\n    project_id: # you GCP project ID \n     region: # region where your GCP project resides  \n   # Credentials\n        # Add GCP credentials"
+    },
+    {
+        "urn": "urn:li:dataPlatform:influxdb",
+        "name": "influxdb",
+        "displayName": "InfluxDB",
+        "description": "Igest databases, measurements, tags, and fields from an InfluxDB instance.",
+        "docsUrl": "https://datahubproject.io/docs/generated/ingestion/sources/influxdb/",        
+        "recipe": "source:\n  type: influxdb \n  config:\n    host: 'https://<INFLUX_HOST>:<INFLUX_PORT>'\n    #token: '<TOKEN>' # Optional, if not using username/password \n    #org: '<ORG_ID> # Optional, if not using username/password \n    platform_instance: core_finance # Optional, to identify the plafrorm instance \n    username: <USER_NAME>\n    password: <PASSWORD> \n"
     }
+
 ]

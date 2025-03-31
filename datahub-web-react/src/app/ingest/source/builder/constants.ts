@@ -40,6 +40,7 @@ import cassandraLogo from '../../../../images/cassandralogo.png';
 import datahubLogo from '../../../../images/datahublogo.png';
 import neo4j from '../../../../images/neo4j.png';
 import vertexAI from '../../../../images/vertexai.png';
+import influxdb from '../../../../images/influxdblogo.png';
 
 export const ATHENA = 'athena';
 export const ATHENA_URN = `urn:li:dataPlatform:${ATHENA}`;
@@ -143,6 +144,9 @@ export const NEO4J = 'neo4j';
 export const NEO4J_URN = `urn:li:dataPlatform:${NEO4J}`;
 export const VERTEX_AI = 'vertexai';
 export const VERTEXAI_URN = `urn:li:dataPlatform:${VERTEX_AI}`;
+export const INFLUX_DB = 'influxdb';
+export const INFLUXDB_URN = `urn:li:dataPlatform:${INFLUX_DB}`;
+
 
 export const PLATFORM_URN_TO_LOGO = {
     [ATHENA_URN]: athenaLogo,
@@ -188,6 +192,7 @@ export const PLATFORM_URN_TO_LOGO = {
     [DATAHUB_URN]: datahubLogo,
     [NEO4J_URN]: neo4j,
     [VERTEXAI_URN]: vertexAI,
+    [INFLUXDB_URN]: influxdb,
 };
 
 export const SOURCE_TO_PLATFORM_URN = {
